@@ -51,7 +51,7 @@ let g:pymode_lint_ignore="E221,E501"
 let g:pymode_folding=0
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(eggs|git|hg|svn|__pycache__|ropeproject|cache)|node_modules|bower_components|coverage|htmlcov|build',
+  \ 'dir':  '\v[\/]\.(eggs|git|hg|svn|__pycache__|ropeproject|cache|tox)|node_modules|bower_components|coverage|htmlcov|build',
   \ 'file': '\v\.(exe|so|dll|pyc|swp)$',
   \ }
 let g:ctrlp_show_hidden = 1
@@ -78,6 +78,7 @@ set nofoldenable
 set completeopt-=preview
 set wrap
 set exrc " load local .vimrc for projects
+set splitright " open panel on the right
 
 " Tabs navigation
 nnoremap <A-Left> :tabprevious<CR>
